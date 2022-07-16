@@ -19,14 +19,7 @@ public:
         
         return isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);       
         
-        
-        if(p==q){
-            isSameTree(p->left,q->left);
-            isSameTree(p->right,q->right);
-        }
-         else if (p!=q)return false;
-        
-        return true;
+        //Recursive solution
         
     }
 };
